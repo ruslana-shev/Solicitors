@@ -6,6 +6,7 @@ body{
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
   font-family: $generalFont;
+  font-weight: 400;
   background-color: $bodyBg;
   line-height: 1;
   color: $generalColor;
@@ -40,6 +41,9 @@ form{
 }
 input[type="submit"]{
   cursor: pointer;
+  border: none;
+}
+input{
   border: none;
 }
 textarea{
