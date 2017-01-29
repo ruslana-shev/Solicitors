@@ -18,6 +18,7 @@
 		h1{
 			font-weight: 700;
 			font-size: 72px;
+			margin-bottom: 26px;
 		}
 		& > span{
 			font-size: 28px;
@@ -29,6 +30,16 @@
 			padding: 25px 37px;
 			background: rgba(0, 0, 0, .45);
 
+			.first-form{
+				.form-control{
+					width: 325px;
+				}
+			}
+			input, select{
+				& + input{
+					margin-left: 4px;
+				}
+			}
 		}
 	}
 }
