@@ -43,7 +43,29 @@
 		}
 	}
 }
+.service-wrap{
+	padding: 55px 0 70px 0;
+	.service-item{
+		float: left;
+		padding: 0 10px;
+		width: 33.3333%;
+		height: 182px;
+		span.icon{
+			margin-bottom: 10px;
+		}
+		.title{
+			color: $generalOrange;
+			font-size: 20px;
+		}
+		p{
+			width: 63%;
+			margin-top: 10px;
+			font-size: 16px;
+			color: $serviceTextColor;
 
+		}
+	}
+}
 
 
 

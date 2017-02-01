@@ -13,3 +13,16 @@
 		vertical-align: middle;
 	}
 }
+
+//bg color or text color clasess
+.grey-bg{
+	background: $greyBg;
+}
+.orange-text{
+	color: $generalOrange;
+}
+
+.sub{
+	font-size: 12px;
+	color: inherit;
+}

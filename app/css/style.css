@@ -122,9 +122,24 @@ button {
   display: inline-block;
   vertical-align: middle; }
 
+.grey-bg {
+  background: #f6f8f8; }
+
+.orange-text {
+  color: #ef6223; }
+
+.sub {
+  font-size: 12px;
+  color: inherit; }
+
 .conteiner {
-  width: 1040px;
-  margin: 0 auto; }
+  width: 1060px;
+  margin: 0 auto;
+  padding: 0 10px; }
+
+.row {
+  margin: 0 -10px;
+  overflow: hidden; }
 
 .icon {
   display: inline-block; }
@@ -151,6 +166,12 @@ button {
   text-transform: uppercase; }
   .form-btn:hover {
     background: #d0551e; }
+
+.simple-text-block {
+  padding: 27px 0;
+  font-size: 18px;
+  color: #5a6464;
+  border-bottom: 1px solid #e4ebec; }
 
 .header {
   height: 80px;
@@ -259,3 +280,21 @@ button {
         width: 325px; }
       .inner .inner-block .inner-form input + input, .inner .inner-block .inner-form select + input {
         margin-left: 4px; }
+
+.service-wrap {
+  padding: 55px 0 70px 0; }
+  .service-wrap .service-item {
+    float: left;
+    padding: 0 10px;
+    width: 33.3333%;
+    height: 182px; }
+    .service-wrap .service-item span.icon {
+      margin-bottom: 10px; }
+    .service-wrap .service-item .title {
+      color: #ef6223;
+      font-size: 20px; }
+    .service-wrap .service-item p {
+      width: 63%;
+      margin-top: 10px;
+      font-size: 16px;
+      color: #6c767e; }
