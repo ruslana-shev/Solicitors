@@ -41,7 +41,33 @@
 	color: $simpleTextColor;
 	border-bottom: 1px solid #e4ebec; 
 }
-
+//standart button
+.btn{
+	display: inline-block;
+	height: 46px;
+	line-height: 46px;
+	border: 1px solid transparent;
+	border-radius: 2px;
+	font-size: 16px;
+	text-align: center;
+	padding: 0 25px;
+	&.white-btn{
+		border-color: #fff;
+		color: #fff;
+		&:hover{
+			background: #fff;
+			color: $generalBlueColor;
+		}
+	}
+	&.orange-btn{
+		border-color: $generalOrange;
+		color: $generalOrange;
+		&:hover{
+			background: $generalOrange;
+			color: #fff;
+		}
+	}
+}
 .header{
 	height: $desktopHeaderHeight;
 	width: 100%;

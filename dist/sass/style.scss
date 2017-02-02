@@ -61,11 +61,123 @@
 			width: 63%;
 			margin-top: 10px;
 			font-size: 16px;
-			color: $serviceTextColor;
+			color: $BlueTextColor;
 
 		}
 	}
 }
+.category-wrap{
+	padding: 60px 0 75px 0;
+	overflow: hidden;
 
+	& > .conteiner > .title{
+		color: #fff;
+		font-size: 24px;
+		font-weight: 600;
+		text-align: center;
+	}
+	.news-row{
+		margin: 50px 0;
+		overflow: hidden;
+		.news-post{
+		width: 33.333%;
+		float: left;
+		padding: 0 12px;
+		}
+		.news-content{
+			background: #fff;
+			border-top: 6px solid #98bed5;
+			border-radius: 1px;
+			padding: 19px;
+			.title{
+				color: $titleBlueColor;
+				font-size: 20px;
+				font-weight: 600;
+			}
+			p{
+				color: $BlueTextColor;
+				font-size: 16px;
+				margin-top: 15px;
+				line-height: 1.5;
+			}
+			a{
+				font-weight: 600;
+				color: $titleBlueColor;
+			}
+		}
+	}
 
+}
+.category-btn{
+	text-align: center;
+	margin-top: 40px;
+	.btn{
+		margin: 0 12px;
+	}
+}
+.carousel-wrap{
+	margin-bottom: 73px;
+	.title{
+		font-weight: 600;
+		font-size: 24px;
+		color: $titleBlueColor;
+		margin-bottom: 20px; 
+		.sub{
+			font-size: 24px;
+		}
+	}
+	.law-slick-block{
+		height: 46px;
+		line-height: 46px;
+		border-top: 1px solid #e2e6e7;
+		border-bottom: 1px solid #e2e6e7;
+		color: $generalOrange;
+		font-size: 16px;
+		font-weight: 600;
+	}
+	.slick-arrow{
+		position: absolute;
+		background: transparent;
+		border: none;
+		color: transparent;
+		height: 24px;
+		width: 15px;
+	}
+	.slick-prev{
+		left: -60px;
+		top: 10px;
+	}
+	.slick-next{
+		right: -60px;
+		top: 10px;
+	}
+	.slick-arrow::before, .slick-arrow::after{
+		content: "";
+		display: inline-block;
+		width: 16px;
+		height: 3px;
+		background: $generalOrange;
+		position: absolute;
+	}
+	.slick-prev::before{
+		top: 15px;
+		left: -1px;
+		transform: rotate(45deg);
+	}
+	.slick-prev::after{
+		bottom: 16px;
+		right: 0px;
+		transform: rotate(-45deg);
+	}
+	.slick-next::before{
+		top: 13px;
+		left: -1px;
+		transform: rotate(-45deg);
+	}
+	.slick-next::after{
+		bottom: 18px;
+		right: 0px;
+		transform: rotate(45deg);
+	}
 
+}
