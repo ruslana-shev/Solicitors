@@ -131,6 +131,9 @@ button {
 .orange-text {
   color: #ef6223; }
 
+.orange-bg {
+  background: #ef6223; }
+
 .sub {
   font-size: 12px;
   color: inherit; }
@@ -426,3 +429,51 @@ button {
     -webkit-transform: rotate(45deg);
         -ms-transform: rotate(45deg);
             transform: rotate(45deg); }
+
+.country-inner {
+  text-align: center;
+  margin: 55px 0 66px 0; }
+  .country-inner .title {
+    font-size: 38px;
+    color: #515a60;
+    font-weight: 600; }
+  .country-inner .country-btn {
+    margin-top: 63px; }
+    .country-inner .country-btn .btn {
+      margin: 12px;
+      font-weight: 600; }
+
+.find-country-inner .find-block {
+  color: #fff;
+  -webkit-border-radius: 1px;
+          border-radius: 1px;
+  height: 103px; }
+  .find-country-inner .find-block::before {
+    content: "";
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+    margin-left: -4px; }
+
+.find-country-inner .find-text-country {
+  font-size: 30px;
+  font-weight: 600;
+  margin-right: 185px; }
+
+.find-country-inner .vertical-middle {
+  display: inline-block;
+  vertical-align: middle; }
+  .find-country-inner .vertical-middle .icon {
+    margin: 0 20px; }
+  .find-country-inner .vertical-middle a {
+    color: #fff;
+    font-size: 24px; }
+    .find-country-inner .vertical-middle a .country-solicitors-text {
+      display: block;
+      font-size: 14px;
+      color: #a54619; }
+
+.find-country-inner .country {
+  border-left: 1px solid #a54619;
+  padding: 0 30px;
+  line-height: 1.5; }

@@ -181,3 +181,61 @@
 	}
 
 }
+.country-inner{
+	text-align: center;
+	margin: 55px 0 66px 0;
+	.title{
+		font-size: 38px;
+		color: $titleBlueColor;
+		font-weight: 600;
+	}
+	.country-btn{
+		margin-top: 63px;
+		.btn{
+			margin: 12px;
+			font-weight: 600;
+		}
+	}
+}
+.find-country-inner{
+	.find-block{
+		color: #fff;
+		border-radius: 1px;
+		height: 103px;
+		&::before{
+			content: "";
+			height: 100%;
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: -4px;
+		}
+	}
+	.find-text-country{
+		font-size: 30px;
+		font-weight: 600;
+		margin-right: 185px;
+	}
+	.vertical-middle{
+		display: inline-block;
+		vertical-align: middle;
+		.icon{
+			margin: 0 20px;
+		}				
+		a{
+			color: #fff;
+			font-size: 24px;
+			
+			.country-solicitors-text{
+				display: block;
+				font-size: 14px;
+				color: #a54619;
+			}
+		}
+	}
+	.country{
+		border-left: 1px solid #a54619;
+		padding: 0 30px;
+		line-height: 1.5;
+	}
+}
+
