@@ -131,9 +131,14 @@
 		line-height: 46px;
 		border-top: 1px solid #e2e6e7;
 		border-bottom: 1px solid #e2e6e7;
-		color: $generalOrange;
-		font-size: 16px;
-		font-weight: 600;
+		a{
+			color: $generalOrange;
+			font-size: 16px;
+			font-weight: 600;
+			&:hover{
+				color: $titleBlueColor;
+			}
+		}
 	}
 	.slick-arrow{
 		position: absolute;
@@ -210,10 +215,9 @@
 			margin-left: -4px;
 		}
 	}
-	.find-text-country{
+	.find-text{
 		font-size: 30px;
 		font-weight: 600;
-		margin-right: 185px;
 	}
 	.vertical-middle{
 		display: inline-block;
@@ -224,7 +228,9 @@
 		a{
 			color: #fff;
 			font-size: 24px;
-			
+			&:hover{
+				color: #a54619;
+			}
 			.country-solicitors-text{
 				display: block;
 				font-size: 14px;
@@ -234,8 +240,38 @@
 	}
 	.country{
 		border-left: 1px solid #a54619;
-		padding: 0 30px;
-		line-height: 1.5;
+		height: 100%;
+		padding: 32px;
+		line-height: 1.2;
+		float: right;
+		text-align: center;
 	}
+}
+.solicitor-login-wrap{
+	height: 160px;
+	margin: 76px 0 40px 0;
+	.solicitor-login-text{
+		width: 512px;
+		float: left;
+		margin-top: 42px;
+		.title{
+			font-size: 32px;
+			font-weight: 600;
+			color: #fff;
+		}
+		p{
+			color: #fff;
+			font-size: 16px;
+			margin-top: 15px;
+		}
+	}
+	.login-btn{
+		float: right;
+		margin-top: 64px;
+		.btn{
+			font-size: 16px;
+			margin: 12px;
+		}
+	}	
 }
 

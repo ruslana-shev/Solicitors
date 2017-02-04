@@ -220,6 +220,25 @@ button {
         .header .header-nav li a:hover {
           color: #ef6223; }
 
+.footer {
+  text-align: center; }
+  .footer ul {
+    margin-bottom: 34px; }
+    .footer ul li {
+      display: inline-block;
+      padding: 0 12px; }
+      .footer ul li a {
+        font-size: 12px;
+        color: #515a60;
+        font-weight: 600; }
+        .footer ul li a:hover {
+          color: #ef6223; }
+  .footer span {
+    display: inline-block;
+    margin-top: 28px;
+    font-size: 14px;
+    color: #7d858b; }
+
 .admin-ic {
   background-image: url(../img/sprite.png);
   background-position: -70px -97px;
@@ -381,10 +400,13 @@ button {
     height: 46px;
     line-height: 46px;
     border-top: 1px solid #e2e6e7;
-    border-bottom: 1px solid #e2e6e7;
-    color: #ef6223;
-    font-size: 16px;
-    font-weight: 600; }
+    border-bottom: 1px solid #e2e6e7; }
+    .carousel-wrap .law-slick-block a {
+      color: #ef6223;
+      font-size: 16px;
+      font-weight: 600; }
+      .carousel-wrap .law-slick-block a:hover {
+        color: #515a60; }
   .carousel-wrap .slick-arrow {
     position: absolute;
     background: transparent;
@@ -455,10 +477,9 @@ button {
     vertical-align: middle;
     margin-left: -4px; }
 
-.find-country-inner .find-text-country {
+.find-country-inner .find-text {
   font-size: 30px;
-  font-weight: 600;
-  margin-right: 185px; }
+  font-weight: 600; }
 
 .find-country-inner .vertical-middle {
   display: inline-block;
@@ -468,6 +489,8 @@ button {
   .find-country-inner .vertical-middle a {
     color: #fff;
     font-size: 24px; }
+    .find-country-inner .vertical-middle a:hover {
+      color: #a54619; }
     .find-country-inner .vertical-middle a .country-solicitors-text {
       display: block;
       font-size: 14px;
@@ -475,5 +498,30 @@ button {
 
 .find-country-inner .country {
   border-left: 1px solid #a54619;
-  padding: 0 30px;
-  line-height: 1.5; }
+  height: 100%;
+  padding: 32px;
+  line-height: 1.2;
+  float: right;
+  text-align: center; }
+
+.solicitor-login-wrap {
+  height: 160px;
+  margin: 76px 0 40px 0; }
+  .solicitor-login-wrap .solicitor-login-text {
+    width: 512px;
+    float: left;
+    margin-top: 42px; }
+    .solicitor-login-wrap .solicitor-login-text .title {
+      font-size: 32px;
+      font-weight: 600;
+      color: #fff; }
+    .solicitor-login-wrap .solicitor-login-text p {
+      color: #fff;
+      font-size: 16px;
+      margin-top: 15px; }
+  .solicitor-login-wrap .login-btn {
+    float: right;
+    margin-top: 64px; }
+    .solicitor-login-wrap .login-btn .btn {
+      font-size: 16px;
+      margin: 12px; }
