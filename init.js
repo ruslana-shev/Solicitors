@@ -6,3 +6,6 @@ $('.law-slick').slick({
   autoplay: false,
   autoplaySpeed: 2000,
 });
+
+/*init formstyle*/
+ $('select').styler();

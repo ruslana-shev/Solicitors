@@ -26,20 +26,51 @@
 		}
 
 		.inner-form{
+			width: 860px;
 			margin-top: 40px;
 			padding: 25px 37px;
 			background: rgba(0, 0, 0, .45);
-
+			text-align: center;
 			.first-form{
 				.form-control{
 					width: 325px;
 				}
 			}
+			
 			input, select{
 				& + input{
 					margin-left: 4px;
 				}
 			}
+			.more-option-btn{
+				cursor: pointer;
+				display: inline-block;
+				margin: 10px 0 15px 0;
+			}
+			.more-option-form{
+				display: none;
+			}
+		}
+		.input-group{
+			margin-bottom: 13px;
+			display: inline-block;
+			label{
+				font-size: 16px;
+				font-weight: 600;
+			}
+		}
+		.form-text{
+			label{
+				display: block;
+
+			}
+		}
+		.input-group-select{
+			float: left;
+			margin-right: 6px;
+		}
+		.input-checkbox{
+			clear: both;
 		}
 	}
 }

@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
+	<link rel="stylesheet" href="css/jquery.formstyler.css">
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -17,8 +18,14 @@
 			<ul class="header-nav">
 				<li><a href="#">Articles</a></li>
 				<li><a href="#">Contect</a></li>
-				<li><a href="#"><span class="icon serch-ic"></span></a></li>
+				<li><a href="#"><span class="icon serch-ic serch-ic-btn"></span></a></li>
 			</ul>
+			<div class="serch-ic-form">
+				<input type="text" name="search" class="form-control" id="serch" placeholder="Search" >
+				<label for="serch"></label>
+			</div>
+
+
 		</div>
 	</div>
 	<!-- HEADER END -->
@@ -35,6 +42,40 @@
 							<input type="text" name="area" class="form-control" placeholder="Area of practice, e.g. commercial law">
 							<input type="text" name="countri" class="form-control" placeholder="County, city or postcode">
 							<input type="submit" value="SEARCH" class="form-btn">
+						</div>
+						<span class="more-option-btn">+ More Option</span>
+						<div class="more-option-form">
+							<div class="input-group form-text">
+								<div class="input-group-select">
+									<label for="languadge-select">Languadge</label>
+									<br>
+									<select name="" id="languadge-select">
+										<option value="">All Languages</option>
+										<option value="">First</option>
+										<option value="">Second</option>
+									</select>
+								</div>
+								<div class="input-group-select">
+									<label for="name">Name</label>
+									<br>
+									<input type="text" name="area" class="form-control" placeholder="e.g. Joe Bloggs" id="name">
+								</div>
+								<div class="input-group-select">
+									<label for="id">SRA ID</label>
+									<br>
+									<input type="text" name="country" class="form-control" placeholder="" id="id">
+								</div>
+							</div>
+							<div class="input-group input-checkbox">
+								<input type="checkbox" name="legal" id="legal">
+								<label for="legal">Accept legal aid</label>
+								<input type="checkbox" name="access" id="access">
+								<label for="access">Disabled access</label>
+								<input type="checkbox" name="loops" id="loops">
+								<label for="loops">Hearing loops</label>
+								<input type="checkbox" name="language" id="language">
+								<label for="language">Sign language</label>
+							</div>
 						</div>
 					</form>
 				</div>
@@ -240,6 +281,8 @@
 	<!-- jQuery -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
 	<script type="text/javascript" src="../slick.min.js"></script>
+	<script src="../plugin.js"></script>
+	<script src="../jquery.formstyler.min.js"></script>
 	<script src="../init.js"></script>
 </body>
 </html>
