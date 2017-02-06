@@ -30,7 +30,7 @@
 			margin-top: 40px;
 			padding: 25px 37px;
 			background: rgba(0, 0, 0, .45);
-			text-align: center;
+			text-align: left;
 			.first-form{
 				.form-control{
 					width: 325px;
@@ -56,7 +56,7 @@
 			display: inline-block;
 			label{
 				font-size: 16px;
-				font-weight: 600;
+				cursor: pointer;
 			}
 		}
 		.form-text{
@@ -98,7 +98,6 @@
 	}
 }
 .category-wrap{
-	padding: 60px 0 75px 0;
 	overflow: hidden;
 
 	& > .conteiner > .title{
@@ -106,42 +105,42 @@
 		font-size: 24px;
 		font-weight: 600;
 		text-align: center;
+		margin: 50px 0 40px 0;
 	}
-	.news-row{
-		margin: 50px 0;
-		overflow: hidden;
-		.news-post{
-		width: 33.333%;
-		float: left;
-		padding: 0 12px;
+		
+	.news-post{
+	width: 33.333%;
+	float: left;
+	padding: 0 10px;
+	}
+
+	.news-content{
+		background: #fff;
+		border-top: 6px solid #98bed5;
+		border-radius: 1px;
+		padding: 19px;
+		.title{
+			color: $titleBlueColor;
+			font-size: 20px;
+			font-weight: 600;
 		}
-		.news-content{
-			background: #fff;
-			border-top: 6px solid #98bed5;
-			border-radius: 1px;
-			padding: 19px;
-			.title{
-				color: $titleBlueColor;
-				font-size: 20px;
-				font-weight: 600;
-			}
-			p{
-				color: $BlueTextColor;
-				font-size: 16px;
-				margin-top: 15px;
-				line-height: 1.5;
-			}
-			a{
-				font-weight: 600;
-				color: $titleBlueColor;
-			}
+		p{
+			color: $BlueTextColor;
+			font-size: 16px;
+			margin-top: 15px;
+			line-height: 1.5;
+		}
+		a{
+			font-weight: 600;
+			color: $titleBlueColor;
 		}
 	}
+	
 
 }
 .category-btn{
 	text-align: center;
-	margin-top: 40px;
+	margin: 40px 0 75px 0;
 	.btn{
 		margin: 0 12px;
 	}
@@ -235,74 +234,76 @@
 }
 .find-country-inner{
 	.find-block{
+		@extend %vertical-align;
 		color: #fff;
 		border-radius: 1px;
 		height: 103px;
-		&::before{
-			content: "";
-			height: 100%;
-			display: inline-block;
-			vertical-align: middle;
-			margin-left: -4px;
-		}
-	}
-	.find-text{
-		font-size: 30px;
-		font-weight: 600;
-	}
-	.vertical-middle{
-		display: inline-block;
-		vertical-align: middle;
-		.icon{
-			margin: 0 20px;
-		}				
-		a{
-			color: #fff;
-			font-size: 24px;
-			&:hover{
-				color: #a54619;
+		.find-block-wrap{
+			width: 100%;
+			overflow: hidden;
+			.find-text{
+				float: left;
+				padding: 20px 0 20px 0;
+				font-size: 30px;
+				font-weight: 600;
+				.icon{
+				margin: 0 20px;
+				vertical-align: middle;
+				}
 			}
-			.country-solicitors-text{
-				display: block;
-				font-size: 14px;
-				color: #a54619;
+			.find-country{
+				float: right; 
+				a{
+					display: inline-block;
+					border-left: 1px solid #a54619;
+					padding: 29px;
+					line-height: 1.2;
+					text-align: center;
+					color: #fff;
+					font-size: 24px;
+					&:hover{
+						color: #a54619;
+					}
+				}
+				.country-solicitors-text{
+					display: block;
+					font-size: 14px;
+					color: #a54619;
+				}
 			}
-		}
-	}
-	.country{
-		border-left: 1px solid #a54619;
-		height: 100%;
-		padding: 32px;
-		line-height: 1.2;
-		float: right;
-		text-align: center;
-	}
-}
-.solicitor-login-wrap{
-	height: 160px;
-	margin: 76px 0 40px 0;
-	.solicitor-login-text{
-		width: 512px;
-		float: left;
-		margin-top: 42px;
-		.title{
-			font-size: 32px;
-			font-weight: 600;
-			color: #fff;
-		}
-		p{
-			color: #fff;
-			font-size: 16px;
-			margin-top: 15px;
-		}
-	}
-	.login-btn{
-		float: right;
-		margin-top: 64px;
-		.btn{
-			font-size: 16px;
-			margin: 12px;
 		}
 	}	
+}
+.solicitor-login-inner{
+	margin: 76px 0 40px 0;
+	.solicitor-login-wrap{
+		height: 160px;
+		@extend %vertical-align;
+		.solicitor-login-block{
+			width: 100%;
+				.solicitor-login-text{
+					width: 512px;
+					float: left;
+					.title{
+						font-size: 32px;
+						font-weight: 600;
+						color: #fff;
+					}
+					p{
+						color: #fff;
+						font-size: 16px;
+						margin-top: 15px;
+					}
+				}
+			.login-btn{
+				float: right;
+				padding-top: 15px;
+				.btn{
+					font-size: 16px;
+					margin: 12px;
+				}
+			}	
+		}
+	}
 }
 

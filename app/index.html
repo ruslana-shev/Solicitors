@@ -18,11 +18,12 @@
 			<ul class="header-nav">
 				<li><a href="#">Articles</a></li>
 				<li><a href="#">Contect</a></li>
-				<li><a href="#"><span class="icon serch-ic serch-ic-btn"></span></a></li>
+				<li><a href="#"><span class="icon serch-ic search-ic-btn"></span></a></li>
 			</ul>
-			<div class="serch-ic-form">
-				<input type="text" name="search" class="form-control" id="serch" placeholder="Search" >
-				<label for="serch"></label>
+			<div class="search-ic-form">
+				<label for="search">Search on site</label>
+				<input type="text" name="search" class="form-control" id="search" placeholder="Search" >
+				<input type="submit" value="SEARCH" class="form-btn">
 			</div>
 
 
@@ -71,7 +72,7 @@
 								<label for="legal">Accept legal aid</label>
 								<input type="checkbox" name="access" id="access">
 								<label for="access">Disabled access</label>
-								<input type="checkbox" name="loops" id="loops">
+								<input type="checkbox" name="loops" id="loops" checked>
 								<label for="loops">Hearing loops</label>
 								<input type="checkbox" name="language" id="language">
 								<label for="language">Sign language</label>
@@ -177,7 +178,7 @@
 				<div class="title">
 					<span>Legal articles, advice and help</span>
 				</div>
-				<div class="news-row">
+				<div class="row">
 					<div class="news-post">
 						<div class="news-content">
 							<div class="title">
@@ -234,24 +235,32 @@
 		<div class="find-country-inner">
 			<div class="conteiner">
 				<div class="find-block orange-bg">
-					<div class="vertical-middle"><span class="icon planet-ic"></span></div>
-					<div class="vertical-middle find-text"><span>Find a Solicitor In...</span></div>
-					<div class="vertical-middle country"><a href="#">Scotland <span class="country-solicitors-text">1980 solicitors</span></a></div>
-					<div class="vertical-middle country"><a href="#">Wales <span class="country-solicitors-text">1980 solicitors</span></a></div>
-					<div class="vertical-middle country"><a href="#">England <span class="country-solicitors-text">3654 solicitors</span></a></div>
+					<div class="find-block-wrap">
+						<div class="find-text">
+								<span class="icon planet-ic"></span> 
+								<span>Find a Solicitor In...</span>
+						</div>
+						<div class="find-country">
+							<a href="#">Scotland <span class="country-solicitors-text">1980 solicitors</span></a>
+							<a href="#">Wales <span class="country-solicitors-text">1980 solicitors</span></a>
+							<a href="#">England <span class="country-solicitors-text">3654 solicitors</span></a>
+						</div>	
+					</div>
 				</div>
 			</div>
 		</div>
-		<div class="solicitor-login-wrap blue-bg">
+		<div class="solicitor-login-inner blue-bg">
 			<div class="conteiner">
-				<div class="solicitor-login-block">
-					<div class="solicitor-login-text">
-						<span class="title">Are you asolicitor?</span>
-						<p>Lorem ipsum dolorae caporium est artis scriptoraie dolor sit amet nonuti congrest magnium cartier excreteur doth paristi.</p>
-					</div>
-					<div class="login-btn">
-						<a href="#" class="btn white-btn">Sign up as Solicitor</a>
-						<a href="#" class="btn white-btn">Solicitor Login</a>
+				<div class="solicitor-login-wrap">
+					<div class="solicitor-login-block">
+						<div class="solicitor-login-text">
+							<span class="title">Are you a solicitor?</span>
+							<p>Lorem ipsum dolorae caporium est artis scriptoraie dolor sit amet nonuti congrest magnium cartier excreteur doth paristi.</p>
+						</div>
+						<div class="login-btn">
+							<a href="#" class="btn white-btn">Sign up as Solicitor</a>
+							<a href="#" class="btn white-btn">Solicitor Login</a>
+						</div>
 					</div>
 				</div>
 			</div>

@@ -111,14 +111,14 @@ button {
   border: none;
   cursor: pointer; }
 
-.inner::before {
+.inner::before, .find-country-inner .find-block::before, .solicitor-login-inner .solicitor-login-wrap::before {
   content: '';
   display: inline-block;
   height: 100%;
   vertical-align: middle;
   margin-left: -4px; }
 
-.inner > * {
+.inner > *, .find-country-inner .find-block > *, .solicitor-login-inner .solicitor-login-wrap > * {
   display: inline-block;
   vertical-align: middle; }
 
@@ -238,6 +238,26 @@ input[type="checkbox"] {
         font-size: 16px; }
         .header .header-nav li a:hover {
           color: #ef6223; }
+  .header .search-ic-form {
+    display: none;
+    position: absolute;
+    top: 58px;
+    right: 190px;
+    width: 340px;
+    height: 125px;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 10px; }
+    .header .search-ic-form label {
+      color: #fff;
+      font-size: 16px;
+      cursor: pointer; }
+    .header .search-ic-form input[type="text"] {
+      margin: 10px 10px 10px 0; }
+    .header .search-ic-form input[type="submit"] {
+      font-size: 12px;
+      width: 80px;
+      height: 35px;
+      padding: 5px; }
 
 .footer {
   text-align: center; }
@@ -344,7 +364,7 @@ input[type="checkbox"] {
       margin-top: 40px;
       padding: 25px 37px;
       background: rgba(0, 0, 0, 0.45);
-      text-align: center; }
+      text-align: left; }
       .inner .inner-block .inner-form .first-form .form-control {
         width: 325px; }
       .inner .inner-block .inner-form input + input, .inner .inner-block .inner-form select + input {
@@ -360,7 +380,7 @@ input[type="checkbox"] {
       display: inline-block; }
       .inner .inner-block .input-group label {
         font-size: 16px;
-        font-weight: 600; }
+        cursor: pointer; }
     .inner .inner-block .form-text label {
       display: block; }
     .inner .inner-block .input-group-select {
@@ -388,42 +408,39 @@ input[type="checkbox"] {
       color: #6c767e; }
 
 .category-wrap {
-  padding: 60px 0 75px 0;
   overflow: hidden; }
   .category-wrap > .conteiner > .title {
     color: #fff;
     font-size: 24px;
     font-weight: 600;
-    text-align: center; }
-  .category-wrap .news-row {
-    margin: 50px 0;
-    overflow: hidden; }
-    .category-wrap .news-row .news-post {
-      width: 33.333%;
-      float: left;
-      padding: 0 12px; }
-    .category-wrap .news-row .news-content {
-      background: #fff;
-      border-top: 6px solid #98bed5;
-      -webkit-border-radius: 1px;
-              border-radius: 1px;
-      padding: 19px; }
-      .category-wrap .news-row .news-content .title {
-        color: #515a60;
-        font-size: 20px;
-        font-weight: 600; }
-      .category-wrap .news-row .news-content p {
-        color: #6c767e;
-        font-size: 16px;
-        margin-top: 15px;
-        line-height: 1.5; }
-      .category-wrap .news-row .news-content a {
-        font-weight: 600;
-        color: #515a60; }
+    text-align: center;
+    margin: 50px 0 40px 0; }
+  .category-wrap .news-post {
+    width: 33.333%;
+    float: left;
+    padding: 0 10px; }
+  .category-wrap .news-content {
+    background: #fff;
+    border-top: 6px solid #98bed5;
+    -webkit-border-radius: 1px;
+            border-radius: 1px;
+    padding: 19px; }
+    .category-wrap .news-content .title {
+      color: #515a60;
+      font-size: 20px;
+      font-weight: 600; }
+    .category-wrap .news-content p {
+      color: #6c767e;
+      font-size: 16px;
+      margin-top: 15px;
+      line-height: 1.5; }
+    .category-wrap .news-content a {
+      font-weight: 600;
+      color: #515a60; }
 
 .category-btn {
   text-align: center;
-  margin-top: 40px; }
+  margin: 40px 0 75px 0; }
   .category-btn .btn {
     margin: 0 12px; }
 
@@ -510,58 +527,54 @@ input[type="checkbox"] {
   -webkit-border-radius: 1px;
           border-radius: 1px;
   height: 103px; }
-  .find-country-inner .find-block::before {
-    content: "";
-    height: 100%;
-    display: inline-block;
-    vertical-align: middle;
-    margin-left: -4px; }
+  .find-country-inner .find-block .find-block-wrap {
+    width: 100%;
+    overflow: hidden; }
+    .find-country-inner .find-block .find-block-wrap .find-text {
+      float: left;
+      padding: 20px 0 20px 0;
+      font-size: 30px;
+      font-weight: 600; }
+      .find-country-inner .find-block .find-block-wrap .find-text .icon {
+        margin: 0 20px;
+        vertical-align: middle; }
+    .find-country-inner .find-block .find-block-wrap .find-country {
+      float: right; }
+      .find-country-inner .find-block .find-block-wrap .find-country a {
+        display: inline-block;
+        border-left: 1px solid #a54619;
+        padding: 29px;
+        line-height: 1.2;
+        text-align: center;
+        color: #fff;
+        font-size: 24px; }
+        .find-country-inner .find-block .find-block-wrap .find-country a:hover {
+          color: #a54619; }
+      .find-country-inner .find-block .find-block-wrap .find-country .country-solicitors-text {
+        display: block;
+        font-size: 14px;
+        color: #a54619; }
 
-.find-country-inner .find-text {
-  font-size: 30px;
-  font-weight: 600; }
-
-.find-country-inner .vertical-middle {
-  display: inline-block;
-  vertical-align: middle; }
-  .find-country-inner .vertical-middle .icon {
-    margin: 0 20px; }
-  .find-country-inner .vertical-middle a {
-    color: #fff;
-    font-size: 24px; }
-    .find-country-inner .vertical-middle a:hover {
-      color: #a54619; }
-    .find-country-inner .vertical-middle a .country-solicitors-text {
-      display: block;
-      font-size: 14px;
-      color: #a54619; }
-
-.find-country-inner .country {
-  border-left: 1px solid #a54619;
-  height: 100%;
-  padding: 32px;
-  line-height: 1.2;
-  float: right;
-  text-align: center; }
-
-.solicitor-login-wrap {
-  height: 160px;
+.solicitor-login-inner {
   margin: 76px 0 40px 0; }
-  .solicitor-login-wrap .solicitor-login-text {
-    width: 512px;
-    float: left;
-    margin-top: 42px; }
-    .solicitor-login-wrap .solicitor-login-text .title {
-      font-size: 32px;
-      font-weight: 600;
-      color: #fff; }
-    .solicitor-login-wrap .solicitor-login-text p {
-      color: #fff;
-      font-size: 16px;
-      margin-top: 15px; }
-  .solicitor-login-wrap .login-btn {
-    float: right;
-    margin-top: 64px; }
-    .solicitor-login-wrap .login-btn .btn {
-      font-size: 16px;
-      margin: 12px; }
+  .solicitor-login-inner .solicitor-login-wrap {
+    height: 160px; }
+    .solicitor-login-inner .solicitor-login-wrap .solicitor-login-block {
+      width: 100%; }
+      .solicitor-login-inner .solicitor-login-wrap .solicitor-login-block .solicitor-login-text {
+        width: 512px;
+        float: left; }
+        .solicitor-login-inner .solicitor-login-wrap .solicitor-login-block .solicitor-login-text .title {
+          font-size: 32px;
+          font-weight: 600;
+          color: #fff; }
+        .solicitor-login-inner .solicitor-login-wrap .solicitor-login-block .solicitor-login-text p {
+          color: #fff;
+          font-size: 16px;
+          margin-top: 15px; }
+      .solicitor-login-inner .solicitor-login-wrap .solicitor-login-block .login-btn {
+        float: right;
+        padding-top: 15px; }
+        .solicitor-login-inner .solicitor-login-wrap .solicitor-login-block .login-btn .btn {
+          font-size: 16px;
+          margin: 12px; }
