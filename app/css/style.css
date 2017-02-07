@@ -472,11 +472,19 @@ input[type="checkbox"] {
     height: 24px;
     width: 15px; }
   .carousel-wrap .slick-prev {
-    left: -60px;
-    top: 10px; }
+    left: 0;
+    margin-left: -60px;
+    top: 10px;
+    /*@media (max-width: 1214px) {
+			margin-left: 0;
+		}*/ }
   .carousel-wrap .slick-next {
-    right: -60px;
-    top: 10px; }
+    right: 0;
+    margin-right: -60px;
+    top: 10px;
+    /*@media (max-width: 1214px) {
+			margin-right: 0;
+		}*/ }
   .carousel-wrap .slick-arrow::before, .carousel-wrap .slick-arrow::after {
     content: "";
     display: inline-block;
