@@ -3,8 +3,10 @@
 <head>
 	<meta charset="UTF-8">
 	<title>Document</title>
+	<meta name=viewport content="width=divice-width, initial-scale=1">
 	<link rel="stylesheet" type="text/css" href="css/slick.css"/>
 	<link rel="stylesheet" href="css/jquery.formstyler.css">
+	<link rel="stylesheet" href="css/slicknav.css"/>
 	<link rel="stylesheet" href="css/style.css">
 </head>
 <body>
@@ -18,15 +20,18 @@
 			<ul class="header-nav">
 				<li><a href="#">Articles</a></li>
 				<li><a href="#">Contect</a></li>
-				<li><a href="#"><span class="icon serch-ic search-ic-btn"></span></a></li>
+				<li><a href="#">
+						<span class="icon serch-ic search-ic-btn"></span>
+					</a>
+				</li>
+				<li>
+					<div class="search-ic-form">
+						<input type="text" name="search" class="form-control" id="search" placeholder="Search on site">
+						<input type="submit" value="" class="form-btn">
+					</div>	
+				</li>
 			</ul>
-			<div class="search-ic-form">
-				<label for="search">Search on site</label>
-				<input type="text" name="search" class="form-control" id="search" placeholder="Search" >
-				<input type="submit" value="SEARCH" class="form-btn">
-			</div>
-
-
+			
 		</div>
 	</div>
 	<!-- HEADER END -->
@@ -49,7 +54,6 @@
 							<div class="input-group form-text">
 								<div class="input-group-select">
 									<label for="languadge-select">Languadge</label>
-									<br>
 									<select name="" id="languadge-select">
 										<option value="">All Languages</option>
 										<option value="">First</option>
@@ -58,12 +62,10 @@
 								</div>
 								<div class="input-group-select">
 									<label for="name">Name</label>
-									<br>
 									<input type="text" name="area" class="form-control" placeholder="e.g. Joe Bloggs" id="name">
 								</div>
 								<div class="input-group-select">
 									<label for="id">SRA ID</label>
-									<br>
 									<input type="text" name="country" class="form-control" placeholder="" id="id">
 								</div>
 							</div>
@@ -158,20 +160,24 @@
 		</div>
 		<div class="carousel-wrap">
 			<div class="conteiner">
-			<div class="title"><span>More Areas of Law <span class="sub">(46)</span></span>
+				<div class="title"><span>More Areas of Law <span class="sub">(46)</span></span></div>
 			</div>
-				<div class="law-slick law-slick-block">
-					<div><a href="#">Employment <span class="sub">(182)</span></a></div>
-					<div><a href="#">Banking <span class="sub">(295)</span></a></div>
-					<div><a href="#">Crime <span class="sub">(154)</span></a></div>
-					<div><a href="#">Family <span class="sub">(99)</span></a></div>
-					<div><a href="#">Charities <span class="sub">(87)</span></a></div>
-					<div><a href="#">Employment <span class="sub">(182)</span></a></div>
-					<div><a href="#">Banking <span class="sub">(295)</span></a></div>
-					<div><a href="#">Crime <span class="sub">(154)</span></a></div>
+			<div class="carousel-block">
+				<div class="conteiner">
+					<div class="law-slick law-slick-block">
+						<div><a href="#">Employment <span class="sub">(182)</span></a></div>
+						<div><a href="#">Banking <span class="sub">(295)</span></a></div>
+						<div><a href="#">Crime <span class="sub">(154)</span></a></div>
+						<div><a href="#">Family <span class="sub">(99)</span></a></div>
+						<div><a href="#">Charities <span class="sub">(87)</span></a></div>
+						<div><a href="#">Employment <span class="sub">(182)</span></a></div>
+						<div><a href="#">Banking <span class="sub">(295)</span></a></div>
+						<div><a href="#">Crime <span class="sub">(154)</span></a></div>
+					</div>
 				</div>
 			</div>
 		</div>
+		
 		
 		<div class="category-wrap blue-bg">
 			<div class="conteiner">
@@ -241,9 +247,11 @@
 								<span>Find a Solicitor In...</span>
 						</div>
 						<div class="find-country">
-							<a href="#">Scotland <span class="country-solicitors-text">1980 solicitors</span></a>
-							<a href="#">Wales <span class="country-solicitors-text">1980 solicitors</span></a>
-							<a href="#">England <span class="country-solicitors-text">3654 solicitors</span></a>
+							<ul>
+								<li><a href="#">Scotland <span class="country-solicitors-text">1980 solicitors</span></a></li>
+								<li><a href="#">Wales <span class="country-solicitors-text">1980 solicitors</span></a></li>
+								<li><a href="#">England <span class="country-solicitors-text">3654 solicitors</span></a></li>
+							</ul>
 						</div>	
 					</div>
 				</div>
@@ -270,28 +278,31 @@
 
 	<!-- FOOTER START -->
 	<div class="footer">
-		<ul>
-			<li><a href="#">HOME</a></li>
-			<li><a href="#">ARTICLES</a></li>
-			<li><a href="#">CONTACT</a></li>
-			<li><a href="#">LOGIN</a></li>
-			<li><a href="#">TERMS</a></li>
-			<li><a href="#">COOKIES</a></li>
-		</ul>
-		<div class="logo">
-			<a href="#"><img src="img/logo.png" alt="">
-			</a>
-		</div>
-		<span>© Solicitors Guru 2015</span>
+		<div class="conteiner">
+			<ul>
+				<li><a href="#">HOME</a></li>
+				<li><a href="#">ARTICLES</a></li>
+				<li><a href="#">CONTACT</a></li>
+				<li><a href="#">LOGIN</a></li>
+				<li><a href="#">TERMS</a></li>
+				<li><a href="#">COOKIES</a></li>
+			</ul>
+			<div class="logo">
+				<a href="#"><img src="img/logo.png" alt="">
+				</a>
+			</div>
+			<span>© Solicitors Guru 2015</span>
+		</div>	
 	</div>
 	<!-- FOOTER END -->
 
 
 	<!-- jQuery -->
 	<script type="text/javascript" src="http://code.jquery.com/jquery-1.8.3.min.js"></script>
-	<script type="text/javascript" src="../slick.min.js"></script>
-	<script src="../plugin.js"></script>
-	<script src="../jquery.formstyler.min.js"></script>
-	<script src="../init.js"></script>
+	<script type="text/javascript" src="../app/js/slick.min.js"></script>
+	<script src="../app/js/plugin.js"></script>
+	<script src="../app/js/jquery.formstyler.min.js"></script>
+	<script src="js/jquery.slicknav.min.js"></script>
+	<script src="../app/js/init.js"></script>
 </body>
 </html>
